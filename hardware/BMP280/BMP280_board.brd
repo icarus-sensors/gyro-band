@@ -126,14 +126,14 @@
 </layers>
 <board>
 <plain>
-<wire x1="0.254" y1="0.254" x2="0.254" y2="14.834" width="0.4064" layer="20"/>
-<wire x1="0.254" y1="14.834" x2="14.834" y2="14.834" width="0.4064" layer="20"/>
-<wire x1="14.834" y1="14.834" x2="14.834" y2="0.254" width="0.4064" layer="20"/>
-<wire x1="14.834" y1="0.254" x2="0.254" y2="0.254" width="0.4064" layer="20"/>
-<hole x="1.524" y="13.564" drill="1"/>
-<hole x="13.564" y="13.564" drill="1"/>
-<hole x="13.564" y="1.524" drill="1"/>
-<hole x="1.524" y="1.524" drill="1"/>
+<wire x1="0" y1="0" x2="0" y2="15" width="0" layer="20"/>
+<wire x1="0" y1="15" x2="15" y2="15" width="0" layer="20"/>
+<wire x1="15" y1="15" x2="15" y2="0" width="0" layer="20"/>
+<wire x1="15" y1="0" x2="0" y2="0" width="0" layer="20"/>
+<hole x="1" y="14" drill="1"/>
+<hole x="14" y="14" drill="1"/>
+<hole x="14" y="1" drill="1"/>
+<hole x="1" y="1" drill="1"/>
 <text x="14.51" y="3.048" size="0.5" layer="25" rot="R90">ICARUS SENSORS
 BMP280 SPI board revA</text>
 </plain>
@@ -440,7 +440,7 @@ design rules under a new name.</description>
 <element name="U1" library="icarus_sensors" package="LGA-8" value="BMP280" x="8.62" y="11.573" smashed="yes">
 <attribute name="NAME" x="8.029" y="13.119" size="0.4064" layer="25" rot="R180" align="top-right"/>
 </element>
-<element name="U2" library="icarus_sensors" package="EM406-FLAT" value="EM406FLAT" x="7.617" y="2.34" smashed="yes"/>
+<element name="U2" library="icarus_sensors" package="EM406-FLAT" value="EM406FLAT" x="7.5" y="2" smashed="yes"/>
 <element name="R1" library="SparkFun-Passives" package="0603-RES" value="" x="7.778" y="8.968" rot="R180"/>
 </elements>
 <signals>
@@ -454,7 +454,7 @@ design rules under a new name.</description>
 <vertex x="14.272" y="0.762"/>
 <vertex x="14.526" y="14.526"/>
 </polygon>
-<wire x1="10.077" y1="5.26" x2="11.7" y2="5.461" width="0.254" layer="1"/>
+<wire x1="9.96" y1="4.92" x2="11.7" y2="5.461" width="0.254" layer="1"/>
 <via x="11.7" y="5.461" extent="1-16" drill="0.6"/>
 <contactref element="C1" pad="2"/>
 <contactref element="C2" pad="2"/>
@@ -475,7 +475,7 @@ design rules under a new name.</description>
 <signal name="CSB">
 <contactref element="U1" pad="2"/>
 <contactref element="U2" pad="5"/>
-<wire x1="9.077" y1="5.26" x2="9.077" y2="6.283" width="0.254" layer="1"/>
+<wire x1="8.96" y1="4.92" x2="9.077" y2="6.283" width="0.254" layer="1"/>
 <wire x1="9.077" y1="6.283" x2="9.398" y2="6.604" width="0.254" layer="1"/>
 <wire x1="9.398" y1="6.604" x2="9.906" y2="6.604" width="0.254" layer="1"/>
 <wire x1="9.906" y1="6.604" x2="11.176" y2="7.874" width="0.254" layer="1"/>
@@ -487,7 +487,7 @@ design rules under a new name.</description>
 <signal name="SCK">
 <contactref element="U1" pad="4"/>
 <contactref element="U2" pad="3"/>
-<wire x1="7.077" y1="5.26" x2="7.077" y2="5.807" width="0.254" layer="1"/>
+<wire x1="6.96" y1="4.92" x2="7.077" y2="5.807" width="0.254" layer="1"/>
 <wire x1="7.077" y1="5.807" x2="9.144" y2="7.874" width="0.254" layer="1"/>
 <wire x1="9.144" y1="7.874" x2="9.652" y2="7.874" width="0.254" layer="1"/>
 <wire x1="9.652" y1="7.874" x2="10.16" y2="8.382" width="0.254" layer="1"/>
@@ -497,7 +497,7 @@ design rules under a new name.</description>
 <signal name="SDO">
 <contactref element="U2" pad="2"/>
 <contactref element="R1" pad="1"/>
-<wire x1="6.077" y1="5.26" x2="6.077" y2="6.077" width="0.254" layer="1"/>
+<wire x1="5.96" y1="4.92" x2="6.077" y2="6.077" width="0.254" layer="1"/>
 <wire x1="6.077" y1="6.077" x2="6.35" y2="6.35" width="0.254" layer="1"/>
 <wire x1="6.35" y1="6.35" x2="6.35" y2="6.69" width="0.254" layer="1"/>
 <wire x1="6.35" y1="6.69" x2="8.628" y2="8.968" width="0.254" layer="1"/>
@@ -505,7 +505,7 @@ design rules under a new name.</description>
 <signal name="SDI">
 <contactref element="U1" pad="3"/>
 <contactref element="U2" pad="4"/>
-<wire x1="8.077" y1="5.26" x2="8.077" y2="6.045" width="0.254" layer="1"/>
+<wire x1="7.96" y1="4.92" x2="8.077" y2="6.045" width="0.254" layer="1"/>
 <wire x1="8.077" y1="6.045" x2="9.398" y2="7.366" width="0.254" layer="1"/>
 <wire x1="9.398" y1="7.366" x2="9.906" y2="7.366" width="0.254" layer="1"/>
 <wire x1="9.906" y1="7.366" x2="10.668" y2="8.128" width="0.254" layer="1"/>
@@ -522,7 +522,7 @@ design rules under a new name.</description>
 <contactref element="U2" pad="1"/>
 <wire x1="5.295" y1="7.239" x2="5.295" y2="9.525" width="0.254" layer="1"/>
 <wire x1="5.08" y1="9.564" x2="5.295" y2="9.525" width="0.254" layer="1"/>
-<wire x1="5.077" y1="5.26" x2="5.077" y2="7.021" width="0.254" layer="1"/>
+<wire x1="4.96" y1="4.92" x2="5.077" y2="7.021" width="0.254" layer="1"/>
 <wire x1="5.077" y1="7.021" x2="5.295" y2="7.239" width="0.254" layer="1"/>
 <wire x1="7.82" y1="12.548" x2="7.264" y2="12.548" width="0.254" layer="1"/>
 <wire x1="7.264" y1="12.548" x2="6.858" y2="12.954" width="0.254" layer="1"/>
