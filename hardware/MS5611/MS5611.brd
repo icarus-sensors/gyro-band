@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
+<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -498,14 +498,16 @@ design rules under a new name.</description>
 <wire x1="8.96" y1="4.92" x2="9.03" y2="5.9528" width="0.254" layer="1"/>
 <wire x1="9.03" y1="5.9528" x2="6.4692" y2="8.5136" width="0.254" layer="1"/>
 </signal>
-<signal name="N$1">
-<contactref element="C2" pad="1"/>
-<contactref element="U1" pad="1"/>
-<wire x1="6.4692" y1="12.2636" x2="4.839" y2="12.289" width="0.254" layer="1"/>
-<wire x1="4.839" y1="12.289" x2="4.44" y2="11.89" width="0.254" layer="1"/>
-</signal>
 <signal name="VCC">
 <contactref element="U2" pad="1"/>
+<contactref element="C2" pad="1"/>
+<contactref element="U1" pad="1"/>
+<wire x1="6.4692" y1="12.2636" x2="4.44" y2="12.2636" width="0.254" layer="1"/>
+<wire x1="4.44" y1="12.2636" x2="4.44" y2="11.89" width="0.254" layer="1"/>
+<wire x1="4.44" y1="11.89" x2="3.762" y2="11.89" width="0.254" layer="1"/>
+<wire x1="3.762" y1="11.89" x2="3.302" y2="11.43" width="0.254" layer="1"/>
+<wire x1="3.302" y1="11.43" x2="3.302" y2="6.578" width="0.254" layer="1"/>
+<wire x1="3.302" y1="6.578" x2="4.96" y2="4.92" width="0.254" layer="1"/>
 </signal>
 <signal name="N$2">
 <contactref element="R1" pad="1"/>

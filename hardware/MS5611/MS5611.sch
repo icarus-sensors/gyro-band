@@ -1114,6 +1114,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="GND1" library="icarus_sensors" deviceset="GND" device=""/>
 <part name="GND3" library="icarus_sensors" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="icarus_sensors" deviceset="VCC" device=""/>
+<part name="SUPPLY2" library="icarus_sensors" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1122,12 +1123,13 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <instances>
 <instance part="U1" gate="G$1" x="-9.144" y="-2.54"/>
 <instance part="U2" gate="G$1" x="68.58" y="0"/>
-<instance part="GND2" gate="1" x="-40.64" y="-22.86"/>
-<instance part="C2" gate="G$1" x="-40.64" y="-15.24"/>
+<instance part="GND2" gate="1" x="-33.02" y="-22.86"/>
+<instance part="C2" gate="G$1" x="-33.02" y="-15.24"/>
 <instance part="R1" gate="G$1" x="15.24" y="-5.08"/>
 <instance part="GND1" gate="1" x="48.26" y="-22.86"/>
 <instance part="GND3" gate="1" x="-40.64" y="20.32" rot="R180"/>
 <instance part="SUPPLY1" gate="G$1" x="48.26" y="20.32"/>
+<instance part="SUPPLY2" gate="G$1" x="-38.1" y="-10.16" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -1160,7 +1162,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <segment>
 <pinref part="C2" gate="G$1" pin="2"/>
 <pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="-40.64" y1="-17.78" x2="-40.64" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="-17.78" x2="-33.02" y2="-20.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="GND"/>
@@ -1179,19 +1181,20 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <pinref part="U1" gate="G$1" pin="PS"/>
 </segment>
 </net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="VDD"/>
-<pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="-40.64" y1="-10.16" x2="-23.114" y2="-10.16" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="VCC" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="VDD"/>
 <pinref part="SUPPLY1" gate="G$1" pin="VCC"/>
 <wire x1="55.88" y1="5.08" x2="48.26" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="5.08" x2="48.26" y2="20.32" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="VDD"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+<wire x1="-33.02" y1="-10.16" x2="-23.114" y2="-10.16" width="0.1524" layer="91"/>
+<pinref part="SUPPLY2" gate="G$1" pin="VCC"/>
+<wire x1="-33.02" y1="-10.16" x2="-38.1" y2="-10.16" width="0.1524" layer="91"/>
+<junction x="-33.02" y="-10.16"/>
 </segment>
 </net>
 <net name="SDO" class="0">
