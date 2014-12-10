@@ -2487,8 +2487,8 @@ combined with a magnetometer (AK8963).</description>
 <instance part="D1" gate="G$1" x="111.76" y="7.62" rot="R90"/>
 <instance part="T2" gate="G$1" x="137.16" y="17.78" rot="R180"/>
 <instance part="R1" gate="G$1" x="121.92" y="15.24"/>
-<instance part="R2" gate="G$1" x="45.72" y="45.72" rot="R180"/>
-<instance part="R4" gate="G$1" x="-2.54" y="45.72" rot="R180"/>
+<instance part="R2" gate="G$1" x="45.72" y="40.64" rot="R180"/>
+<instance part="R4" gate="G$1" x="-10.16" y="40.64" rot="R180"/>
 <instance part="U2" gate="G$1" x="228.6" y="93.98"/>
 <instance part="U$4" gate="G$1" x="53.34" y="83.82" rot="MR0"/>
 <instance part="S1" gate="G$1" x="93.98" y="50.8"/>
@@ -2791,9 +2791,9 @@ combined with a magnetometer (AK8963).</description>
 <label x="205.74" y="144.78" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="P0.21" pin="S"/>
-<wire x1="38.1" y1="48.26" x2="48.26" y2="48.26" width="0.1524" layer="91"/>
-<label x="40.64" y="48.26" size="1.778" layer="95"/>
+<pinref part="U$1" gate="P0.25" pin="S"/>
+<wire x1="38.1" y1="43.18" x2="48.26" y2="43.18" width="0.1524" layer="91"/>
+<label x="40.64" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BAR2_CS" class="0">
@@ -2858,9 +2858,9 @@ combined with a magnetometer (AK8963).</description>
 <label x="116.84" y="71.12" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="P0.29" pin="S"/>
-<wire x1="38.1" y1="38.1" x2="48.26" y2="38.1" width="0.1524" layer="91"/>
-<label x="40.64" y="38.1" size="1.778" layer="95"/>
+<pinref part="U$1" gate="P0.23" pin="S"/>
+<wire x1="38.1" y1="45.72" x2="48.26" y2="45.72" width="0.1524" layer="91"/>
+<label x="40.64" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VCCIO" class="0">
@@ -2881,9 +2881,9 @@ combined with a magnetometer (AK8963).</description>
 <label x="157.48" y="73.66" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="P0.27" pin="S"/>
-<wire x1="38.1" y1="40.64" x2="48.26" y2="40.64" width="0.1524" layer="91"/>
-<label x="40.64" y="40.64" size="1.778" layer="95"/>
+<pinref part="U$1" gate="P0.21" pin="S"/>
+<wire x1="38.1" y1="48.26" x2="48.26" y2="48.26" width="0.1524" layer="91"/>
+<label x="40.64" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ADXL_FSYNC" class="0">
@@ -2893,9 +2893,9 @@ combined with a magnetometer (AK8963).</description>
 <label x="157.48" y="71.12" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="P0.26" pin="S"/>
-<wire x1="5.08" y1="40.64" x2="-15.24" y2="40.64" width="0.1524" layer="91"/>
-<label x="-15.24" y="40.64" size="1.778" layer="95"/>
+<pinref part="U$1" gate="P0.22" pin="S"/>
+<wire x1="5.08" y1="45.72" x2="-2.54" y2="45.72" width="0.1524" layer="91"/>
+<label x="-7.62" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FLASH_CS" class="0">
@@ -2998,9 +2998,9 @@ combined with a magnetometer (AK8963).</description>
 <label x="101.6" y="50.8" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="X1" gate="SWD" pin="S"/>
-<wire x1="193.04" y1="43.18" x2="203.2" y2="43.18" width="0.1524" layer="91"/>
-<label x="195.58" y="43.18" size="1.778" layer="95"/>
+<pinref part="X1" gate="P0.16" pin="S"/>
+<wire x1="193.04" y1="40.64" x2="203.2" y2="40.64" width="0.1524" layer="91"/>
+<label x="195.58" y="40.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SDO1" class="0">
@@ -3068,11 +3068,11 @@ combined with a magnetometer (AK8963).</description>
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
 <label x="73.66" y="45.72" size="1.778" layer="95"/>
-<wire x1="50.8" y1="45.72" x2="66.04" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="40.64" x2="66.04" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="C11" gate="G$1" pin="2"/>
-<wire x1="66.04" y1="45.72" x2="78.74" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="45.72" x2="66.04" y2="48.26" width="0.1524" layer="91"/>
-<junction x="66.04" y="45.72"/>
+<wire x1="66.04" y1="43.18" x2="78.74" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="43.18" x2="66.04" y2="48.26" width="0.1524" layer="91"/>
+<junction x="66.04" y="43.18"/>
 </segment>
 </net>
 <net name="SDI1" class="0">
@@ -3103,12 +3103,12 @@ combined with a magnetometer (AK8963).</description>
 </segment>
 <segment>
 <pinref part="R4" gate="G$1" pin="2"/>
-<label x="-33.02" y="45.72" size="1.778" layer="95"/>
+<label x="-33.02" y="40.64" size="1.778" layer="95"/>
 <pinref part="C14" gate="G$1" pin="2"/>
-<wire x1="-7.62" y1="45.72" x2="-25.4" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="-25.4" y1="45.72" x2="-25.4" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="-25.4" y1="45.72" x2="-33.02" y2="45.72" width="0.1524" layer="91"/>
-<junction x="-25.4" y="45.72"/>
+<wire x1="-15.24" y1="40.64" x2="-25.4" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="40.64" x2="-25.4" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="40.64" x2="-33.02" y2="40.64" width="0.1524" layer="91"/>
+<junction x="-25.4" y="40.64"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -3141,11 +3141,6 @@ combined with a magnetometer (AK8963).</description>
 </net>
 <net name="SDO2" class="0">
 <segment>
-<pinref part="U6" gate="G$1" pin="DO"/>
-<wire x1="60.96" y1="142.24" x2="48.26" y2="142.24" width="0.1524" layer="91"/>
-<label x="48.26" y="142.24" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="IC3" gate="G$1" pin="DO"/>
 <wire x1="30.48" y1="139.7" x2="38.1" y2="139.7" width="0.1524" layer="91"/>
 <label x="33.02" y="139.7" size="1.778" layer="95"/>
@@ -3157,6 +3152,11 @@ combined with a magnetometer (AK8963).</description>
 <pinref part="C12" gate="G$1" pin="1"/>
 <junction x="-25.4" y="27.94"/>
 <wire x1="-25.4" y1="27.94" x2="-33.02" y2="27.94" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U6" gate="G$1" pin="DO"/>
+<wire x1="60.96" y1="142.24" x2="48.26" y2="142.24" width="0.1524" layer="91"/>
+<label x="48.26" y="142.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCK2" class="0">
@@ -3179,20 +3179,6 @@ combined with a magnetometer (AK8963).</description>
 <label x="-12.7" y="144.78" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="R4" gate="G$1" pin="1"/>
-<pinref part="U$1" gate="P0.22" pin="S"/>
-<wire x1="2.54" y1="45.72" x2="5.08" y2="45.72" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="U$1" gate="P0.23" pin="S"/>
-<pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="38.1" y1="45.72" x2="40.64" y2="45.72" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="R7" gate="G$1" pin="2"/>
@@ -3205,6 +3191,20 @@ combined with a magnetometer (AK8963).</description>
 <pinref part="R5" gate="G$1" pin="2"/>
 <pinref part="X1" gate="P0.05" pin="S"/>
 <wire x1="149.86" y1="27.94" x2="162.56" y2="27.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="U$1" gate="P0.26" pin="S"/>
+<wire x1="-5.08" y1="40.64" x2="5.08" y2="40.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="R2" gate="G$1" pin="2"/>
+<pinref part="U$1" gate="P0.27" pin="S"/>
+<wire x1="40.64" y1="40.64" x2="38.1" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
